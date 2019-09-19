@@ -50,3 +50,17 @@ submitButton.addEventListener("click", function(event) {
         alert("Some fields are missing!.");
     }    
 });
+
+
+
+var savedContactUl = document.getElementById("all_contacts");
+savedContactUl.addEventListener("click", function(event) {
+// get the clicked element 
+// if the element is trash icon 
+// delete the parent li
+if (event.target.className === "fa fa-trash" ) {
+    let li =  event.target.parentNode.parentNode.parentNode
+    let ul = event.target.parentNode.parentNode.parentNode.parentNode;
+    ul.removeChild(li);
+}
+});
