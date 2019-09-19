@@ -1,0 +1,112 @@
+.container {
+    width: 1140px;
+    margin: 100px auto;
+}
+.col-span1-of-2 {
+    box-sizing: border-box;
+    float: left;
+    width: 47%;
+    margin: 1% 1% 0 1.6%;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: 15px;
+    background: #7b4397;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #dc2430, #7b4397); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+h1 {
+    background-color: #2980b9;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    font-weight: 400;
+}
+
+label::after {
+    content: ":"
+}
+
+.save-form {
+    background: #ffffff;
+}
+.save-form form {
+    padding: 10px 20px;
+}
+.save-form form div {
+    margin: 10px 0;
+}
+.save-form form label {
+    width: 25%;
+    display: inline-block;
+    line-height: normal;
+}
+.save-form form input {
+    height: 34px;
+    width: 70%;
+}
+.save-form form textarea {
+    width: 70%;
+}
+input, textarea {
+    padding: 10px 20px;
+}
+.saved-contacts {
+    background: #ffffff;
+    max-height: 500px;
+    min-height: 500px;
+    overflow: scroll;
+}
+.saved-contacts ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.saved-contacts li {
+    padding: 10px 20px;
+    position: relative;
+	transition: 750ms ease-in-out;
+}
+.saved-contacts li:nth-child(2n) {
+    background: #f7f7f7;
+}
+.saved-contacts li div:last-child {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    bottom: 0;
+    line-height: normal;
+}
+.saved-contacts li div:last-child span {
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 150%;
+}
+.saved-contacts li div:last-child span:last-child {
+    color: #dc2430
+}
+.saved-contacts li div:last-child span {
+    color: #2980b9;
+}
+
+.saved-contacts p {
+    margin: 0;
+}
+.saved-contacts p.contact_name {
+    font-size: 120%;
+    margin-bottom: 5px;
+}
+.saved-contacts p.contact_name span {
+    font-size: 90%;
+    font-style: italic;
+}
+.saved-contacts p.contact_phone_number {
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
